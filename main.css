@@ -7,14 +7,20 @@ body {
   justify-content: space-around;
   align-items: center;
   font-size: 10px;
-  background-color: grey;
+  background-color: #333;
   font-family: Calibri;
   color: white;
+  padding: 10px 20px;
+}
+
+.header:hover {
+  background-color: black
 }
 
 .main-content {
   display: grid;
-  justify-content: center;
+  place-items: center;
+  height: 200vh;
   font-size: 30px;
 }
 
@@ -22,6 +28,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 150px;
 }
 
 .main-button {
@@ -32,12 +42,29 @@ body {
   width: 500px;
   height: 500px;
   font-size: 60px;
-  background-color: grey;
+  background-color: #4a4a4a;
   border-radius: 50%;
   color: white;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
+.main-button:hover {
+  background-color: #333333;
+  transform: scale(1.05);
+}
 .myphoto {
   width: 20%;
   height: 20%;
+  border-radius: 10%;
+}
+
+.description {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
 }
