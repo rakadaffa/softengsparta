@@ -54,6 +54,13 @@ body {
   background-color: #333333;
   transform: scale(1.05);
 }
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
 .myphoto {
   width: 20%;
   height: 20%;
