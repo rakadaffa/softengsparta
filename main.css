@@ -1,5 +1,6 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url(background.png);
 }
 
 .main-content {
@@ -39,35 +40,6 @@ body {
 .main-button:hover {
   background-color: #333333;
   transform: scale(1.05);
-}
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  position: relative;
-}
-
-#loader {
-  display: none; /* Hidden by default */
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -60px; /* Half of width */
-  margin-top: -60px;  /* Half of height */
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 .header {
@@ -127,20 +99,48 @@ body {
 .contact-info {
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .myphoto {
-  width: 20%;
-  height: 20%;
-  border-radius: 10%;
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%;
+  border: 4px solid #e2e8f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .description {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: larger;
+  background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.description h1 {
+  font-size: 35px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #4b5563;
 }
