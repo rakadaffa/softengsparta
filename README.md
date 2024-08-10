@@ -5,7 +5,7 @@ Pada project kali ini, saya menggunakan platform web dengan isi data diri, minat
 
 Website yang saya buat menggunakan dasar HTML, CSS, dan JavaScript
 
-Untuk menjalankan program ini bisa langsung clone repository ini dan menjalankannya langsung ataupun menggunakan live server pada file main.html
+Untuk menjalankan program ini bisa langsung clone repository ini dan menjalankannya langsung pada file main.html ataupun menggunakan live server pada file main.html
 
 Saya sudah mencoba untuk mendeploy website ini menggunakan vercel namun masih terdapat error.
 
